@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial,  sans-serif;
+            text-align: center;
+            padding-top: 20px;
+            transition: background 0.3s;
+        }
+        .container {
+              
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .container {
+             
+            width: 300px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content:  center;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            border: 2px solid #555;
+            cursor: pointer;
+        }
+           #green {
+             background: green;
+         }
+           #white {
+             background: white;
+             }
+           #blue  {
+             background: blue;
+             }
+           #yellow {
+             background: yellow;
+             }
+         
+
+      .buttons {
+     
+       
+        margin-bottom: 20px;
+        
+
+      }
+          button {
+      padding: 8px 15px;
+      margin: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button> Home</button>
+        <button>Welcome You</button>
+        <hr>
+    </div>
+    <h2>Color Scheme Switcher</h2>
+    <div class="container">
+        <div class="row">
+          <div class="box" id="green">  </div>
+          <div class="box" id="white">  </div>
+          <div class="box" id="blue">  </div>
+
+        </div>
+        <div class="row">
+            <div class="box" id="yellow">  </div>
+        </div>
+    </div>
+    <p>Try clicking on one of the colors <br>above <br>
+    to change the background <br>color of the page!.
+    <p>
+    <p> You can click on box and <br> change the color <br> enjoy it. </p>
+
+    <script>
+        const boxes = document.querySelectorAll(".box");
+
+        boxes.forEach(function(box) {
+            box.addEventListener("click", function(d) {
+                document.body.style.backgroundColor = d.target.id;
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

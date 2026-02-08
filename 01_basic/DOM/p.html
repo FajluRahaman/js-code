@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "fdiv">
+        <p i>
+            This is my first paragraph
+        </p>
+        <p>
+            This is my second paragraph
+        </p>
+    </div>
+    <h1 id = "fheading" >
+        This is heading</h1>
+  
+</body>
+<script>
+    let fheading = document.createElement("h1");
+    fheading.textContent = "My name is Krishna";
+    let bodyTag = document.querySelector("body");
+    bodyTag.appendChild(fheading);
+</script>
+</html>
