@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+    <!-- Select an element by ID and change its text content -->
+     <!-- <p id = "text">Hello, Dinesh</p>
+     <h1 class = "txt">Weldone</h1>
+      <h1 class = "txt">Good Job</h1> -->
+<!--      
+      <h1> Change text using Button click</h1>
+      <p class="txt"> How are you!</p>
+      <button onclick="Text()"> ChangeText</button> -->
+      <h1>Create a new element and append it to the body</h1>
+      <div id="box"></div>
+</body>
+<script>
+    //    document.getElementById('text').innerText = "What are you doing?"
+
+    //  let ChangeText = document.querySelectorAll('.txt');
+    //  ChangeText.forEach(function(e1){
+    //     e1.innerText = "Your communication skill is very strong";
+    //  })
+
+    // function Text(){
+    //     let element = document.querySelectorAll('.txt');
+    //     element.forEach(function(e){
+    //       e.innerText = "I'm very busy";
+    //     })
+    // }    
+
+     let newHeading = document.createElement("h2");
+     newHeading.textContent = "Introduce yourself";
+     
+     document.body.appendChild(newHeading);
+</script>
+</html>
