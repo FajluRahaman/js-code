@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>Excuse me, I am new this city. you can do help me</p>
+    <ul id = "list"></ul>
+    <button onclick="add()">add Item</button> -->
+
+    <!-- <button id = "btn">Click me</button> -->
+     <!-- click button and input value -->
+      <input type="text" id = "name">
+      <button onclick="showName()">Submit</button>
+      <h2 id="result"></h2>
+</body>
+<script>
+    // function add(){
+    //     let item = document.createElement('list');
+    //     item.textContent = "item"
+    //     document.getElementById("list").appendChild(item);
+    // }
+    // document.getElementById('btn').addEventListener("click",function(){
+    //     alert("Button is working");
+    // })
+
+    function showName(){
+        let value = document.getElementById('name').value;
+        document.getElementById('result').innerText = value;
+    }
+</script>
+</html>

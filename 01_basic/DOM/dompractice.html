@@ -14,8 +14,9 @@
       <h1> Change text using Button click</h1>
       <p class="txt"> How are you!</p>
       <button onclick="Text()"> ChangeText</button> -->
-      <h1>Create a new element and append it to the body</h1>
-      <div id="box"></div>
+      <h1 class="box">Create a new element and append it to the body</h1>
+     <p class = "box"> This is an Elephent</p>
+     
 </body>
 <script>
     //    document.getElementById('text').innerText = "What are you doing?"
@@ -32,9 +33,18 @@
     //     })
     // }    
 
-     let newHeading = document.createElement("h2");
-     newHeading.textContent = "Introduce yourself";
+    //  let newHeading = document.createElement("h2");
+    //  newHeading.textContent = "Introduce yourself";
      
-     document.body.appendChild(newHeading);
+    //  document.body.appendChild(newHeading);
+
+    
+         let element = document.getElementsByClassName('box');
+         element[0].style.color = "red";
+         element[1].style.color = "blue"
+         let newHeading = document.createElement('h2');
+         newHeading.innerText = "What's Happened, tell me";
+         document.body.appendChild(newHeading);
+    
 </script>
 </html>
