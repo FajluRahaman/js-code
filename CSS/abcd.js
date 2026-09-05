@@ -6,3 +6,5 @@ console.log(typeof(null));
 console.log(typeof(undefined));
 console.log(typeof(NaN));
 console.log(typeof(result));
+
+console.log(typeof("45"));
